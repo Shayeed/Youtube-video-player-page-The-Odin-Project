@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contributing to Open Source Part I: The Easy Way</title>
+		<link rel='stylesheet' type='text/css' href='css/style.css'/>
+	</head>
+	<body>
+
+		<!--Header div containing code for all the header elements-->
+		<div class="Header">
+			<div class="Wrapper">
+				<input type ="button" id="Menu"/>
+				<img src="images/youtube-logo.png" alt="youtube-logo" class="Logo">
+				<input type="text" id="searchBox" value="Search" />
+				<input type ="button" id="searchButton"/>
+				<a href=#><img src="images/google-apps-icon.png" alt="App icon" id="appIcon"></a>
+				<a href=#><img src="images/google-bell-icon.png" alt="Bell icon-logo" id="bellIcon"></a>
+				<a href=#><img src="images/photo.jpg" alt="Photo" id="photo"></a>
+				<hr id="horizontalLine"/>
+			</div>
+		</div>
+
+		<!--Main body div containing the current video and up next video suggestions-->
+		<div class="Main">
+			<div class="Wrapper">
+
+				<!--Div containing code for the current video and its details-->
+				<div class="CurrentVideo">
+					<!--Displayin the video directly through youtube-->
+					<!--We can also display it using the video tag, but we need to upload the video also-->
+					<!--Iframe is an inline frame is used to embed another document within the current HTML document-->
+					<iframe width="850" height="480" src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0" allowfullscreen id="Video"></iframe>
+
+					<!--Videos title and other detials-->
+					<p id="title">Contributing to Open Source Part I: The Easy Way</p>
+					<p id="views">34,850 views</p>
+					<a href="#">
+						<img src="images/youtube-like.png" alt="Like" class="links">
+						<p id="Likes">229</p>
+					</a>
+					<a href="#">
+						<img src="images/youtube-like.png" alt="Dislike" id="btnDislike">
+						<p id="Dislike">7</p>
+					</a>
+					<a href="#">
+						<img src="images/youtube-share.png" alt="Share" class="links">
+						<p id="Share">SHARE</p>
+					</a>
+					<a href="#">
+						<img src="images/youtube-three-dots.png" alt="Options" id="btnOptions">
+					</a>
+				</div>
+
+				<!--Div containing code for the up next video suggestions-->
+				<div class="NextVideo">
+					<div id="nextText">
+						<p id="upNext">Up Next</p>
+					</div>
+					<div class="suggestVideo">
+
+						<!--Individual video suggestions boxed into one div-->
+						<a href=#>
+							<div class="VideoDetails">
+								<div class="nextVideo">
+									<img src="images/contributing-2.jpg" alt="contributing-2" class="upNextImg">
+								</div>
+								<div class="nextVideoDesc">
+									<p class="nextDescription">Contributing to Open Source Part II: The Real Way</p>
+									<p class="nextPublisher">The Odin Project</p>
+									<p class="nextViews">19K views</p>
+								</div>
+							</div>
+						</a><!--First video suggestion over-->
+
+						<hr id="suggestVidDivision">
+						
+						<!--Next video suggestion-->
+						<a href=#>
+							<div class="VideoDetails">
+								<div class="nextVideo">
+									<img src="images/getJob.jpg" alt="getJob" class="upNextImg">
+								</div>
+								<div class="nextVideoDesc">
+									<p class="nextDescription">How to get a job at the Big four</p>
+									<p class="nextPublisher">imtiana</p>
+									<p class="nextViews">730K views</p>
+								</div>
+							</div>
+						</a>
+						
+						<a href=#>
+							<div class="VideoDetails">
+								<div class="nextVideo">
+									<img src="images/githubPull.jpg" alt="githubPull" class="upNextImg">
+								</div>
+								<div class="nextVideoDesc">
+									<p class="nextDescription">Your first GitHub Pull Request (in 10 Mins)</p>
+									<p class="nextPublisher">Jackson Bates</p>
+									<p class="nextViews">5.2K views</p>
+								</div>
+							</div>
+						</a>
+						
+						<a href=#>
+							<div class="VideoDetails">
+								<div class="nextVideo">
+									<img src="images/getStartedGithub.jpg" alt="getStartedGithub" class="upNextImg">
+								</div>
+								<div class="nextVideoDesc">
+									<p class="nextDescription">How to get started with Github - Beginner Tutorial</p>
+									<p class="nextPublisher">MicrowaveSam</p>
+									<p class="nextViews">467K views</p>
+								</div>
+							</div>
+						</a>
+						
+						<a href=#>
+							<div class="VideoDetails">
+								<div class="nextVideo">
+									<img src="images/wellPaid.jpg" alt="wellPaid" class="upNextImg">
+								</div>
+								<div class="nextVideoDesc">
+									<p class="nextDescription">How to be a well paid programmer in 1 year</p>
+									<p class="nextPublisher">Simple Programmer</p>
+									<p class="nextViews">41K views</p>
+								</div>
+							</div>
+						</a>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
